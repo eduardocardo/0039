@@ -59,4 +59,16 @@ public class MusicOrganizer
             files.remove(index);
         }
     }
+    /**
+     * Metodo que comprueba si un indice es valido
+     */
+    public void checkIndex(int index)
+    {
+        if(!(index >= 0 && index < files.size()))
+        {
+            System.out.println("El indice introducido es erroneo");
+            System.out.println("debes introducir un indice comprendido entre"
+                                + " 0 y " + (files.size()-1) );
+        } 
+    }   
 }
